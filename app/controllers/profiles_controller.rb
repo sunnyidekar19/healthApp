@@ -16,14 +16,14 @@ class ProfilesController < ApplicationController
   end
 
   # GET /profiles/new
-def new
-@profile = Profile.new
-@profile.user_id = current_user.id
-respond_to do |format|
-format.html # new.html.erb
-format.json { render json: @profile }
-end
-end
+  def new
+    @profile = Profile.new
+    @profile.user_id = current_user.id
+    respond_to do |format|
+    format.html # new.html.erb
+    format.json { render json: @profile }
+                end
+  end
   # GET /profiles/1/edit
   def edit
   end
