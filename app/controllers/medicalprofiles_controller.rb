@@ -25,7 +25,7 @@ class MedicalprofilesController < ApplicationController
   def new
       @medicalprofile = Medicalprofile.new
 
-   end
+  end
 
   # GET /medicalprofiles/1/edit
   def edit
